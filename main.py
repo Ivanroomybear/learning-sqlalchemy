@@ -14,7 +14,7 @@ def create_data() -> None:
     print("Done!")
 
     print("Create new dogs")
-    new_dogs = Dogs(name="Sharick", age=5, breed="Bulldog") # Добавляем новых собак
+    new_dogs = Dogs(name="Sharick", age=5, breed="Bulldog", name="Bobik", age=10, breed="isn't dog") # Добавляем новых собак
     session.add(new_dogs) # Добавляем собаку в таблицу
     session.commit() # Сохраняет все изменения в БД
     print("Done!")
